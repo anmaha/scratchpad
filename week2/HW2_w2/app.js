@@ -122,7 +122,7 @@ findLongestWord = (wordsArray) => {
 console.log(findLongestWord(words))
   
 // Write a function filterLongWords that takes an array of words and a number i and returns the array of words that are longer than i characters long.
-filterLongWords = (wordsArray,i) => {
+filterLongWords = (wordsArray,x) => {
       let filter =[];
         for (i=0; i<wordsArray.length; i++){
             let numLetters = wordsArray[i].length;
@@ -132,7 +132,7 @@ filterLongWords = (wordsArray,i) => {
             }
             return filter;
   };
-    
+  console.log(filterLongWords(words,4));
 // Bonus
 
 // Add a method reverseString (from question 6) to the object String so that it is possible to call: "Per Scholas".reverseString().
